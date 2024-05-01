@@ -1,0 +1,11 @@
+{
+  "name": "quickbooks",
+  "version": "1.0.0",
+  "description": "Personal Abstraction for Quickbooks API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Castaneda",
+  "license": "ISC"
+}

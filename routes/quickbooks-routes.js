@@ -7,7 +7,10 @@ router.get("/oauth", (req, res) => {
 });
 
 router.get("/callback", (req, res) => {
-    getToken(req, res);
+    getToken(req, res)
+        .then(() => {
+            res.send("Authorization succeded");
+        });
 });
 
 router.get("/data/:entity/:id", (req, res) => {

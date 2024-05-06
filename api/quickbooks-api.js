@@ -36,6 +36,14 @@ function QuickbooksAPI (config = defaultParams) {
   this.getAuthURI = function () {
     return this._authURI
   }
+
+  /**
+   * 
+   * @returns {boolean}
+   */
+  this.hasValidToken = function () {
+    return this._client.token.isAccessTokenValid();
+  }
 }
 
 /**
